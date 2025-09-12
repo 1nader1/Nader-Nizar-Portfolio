@@ -1697,7 +1697,7 @@ section h2::after {
     }
 }
 
-@media (width: 768px) {
+@media (max-width: 768px) {
     .navbar .nav-links {
         position: fixed !important;
         z-index: -100 !important;
@@ -1770,4 +1770,12 @@ section h2::after {
     }
 }
 
-
+@media (max-width: 1024px) and (orientation: landscape) {
+    .navbar,
+    .navbar .nav-links {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}
