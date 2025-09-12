@@ -1806,11 +1806,16 @@ section h2::after {
     [data-theme="dark"] .navbar .nav-links {
         background-color: #111 !important;
     }
+    @media (max-width: 768px) {
     .navbar .nav-links.active {
-        left: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
         z-index: 1002 !important;
-    }
-    .navbar .nav-links li {
-        margin: 15px 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 }
+}
+
