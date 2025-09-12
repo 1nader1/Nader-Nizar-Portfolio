@@ -450,6 +450,3 @@ function setupTabletNavigation() {
 
 document.addEventListener('DOMContentLoaded', setupTabletNavigation);
 window.addEventListener('resize', setupTabletNavigation);
-
-
-

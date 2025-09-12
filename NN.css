@@ -1769,3 +1769,48 @@ section h2::after {
         margin-bottom: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .logo {
+        position: static !important;
+        right: auto !important;
+        margin: 0 !important;
+    }
+    .hamburger {
+        position: static !important;
+        left: auto !important;
+        margin: 0 0 0 12px !important;
+        display: block !important;
+    }
+    .dark-mode-toggle {
+        position: static !important;
+        left: auto !important;
+        margin: 0 0 0 12px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        position: fixed !important;
+        z-index: 1001 !important;
+        top: 60px !important;
+        left: -100% !important;
+        width: 100% !important;
+        height: calc(100vh - 50px) !important;
+        background-color: #fff !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: var(--transition) !important;
+    }
+    [data-theme="dark"] .navbar .nav-links {
+        background-color: #111 !important;
+    }
+    .navbar .nav-links.active {
+        left: 0 !important;
+        z-index: 1002 !important;
+    }
+    .navbar .nav-links li {
+        margin: 15px 0 !important;
+    }
+}
