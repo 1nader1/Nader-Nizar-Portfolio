@@ -1819,3 +1819,26 @@ section h2::after {
 }
 }
 
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        display: flex !important;
+        position: fixed !important;
+        top: 25px !important;
+        right: 58px !important;
+        z-index: 1002 !important;
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .dark-mode-toggle {
+        display: flex !important;
+        position: fixed !important;
+        top: 25px !important;
+        left: 60px !important;   
+        right: auto !important;
+        z-index: 1002 !important;
+        margin: 0 !important;
+    }
+}
+
