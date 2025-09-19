@@ -1842,3 +1842,21 @@ section h2::after {
     }
 }
 
+    @media (min-width: 767px) {
+        .title-container .nader {
+        top: 110% !important; 
+        transform: translate(-50%, -20%);
+        min-width: 100vw;
+        opacity: 1;  
+        margin-bottom: 0;
+    }
+}
+    @media (min-width: 2560px) {
+        .name-cont .name {
+        margin-right: 19rem;
+    }
+        .name-cont .subtitle {
+        margin-left: 56rem;
+    }
+}
+
